@@ -714,23 +714,25 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh;
-  min-height: 100vh; }
+  padding: 20rem 0;
+  padding-bottom: 35rem;
+  margin-top: -10vh; }
+  @media only screen and (max-width: 75em) {
+    .section-about {
+      padding-bottom: 30rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0;
+      padding: 10rem 0;
       margin-top: -10vh; } }
 
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(98, 115, 122, 0.2), rgba(98, 115, 122, 0.9)), url(../img/features-hoop.jpg);
   background-size: cover;
-  background-position: center;
-  transform: skewY(-7deg);
-  margin-top: -11rem; }
-  .section-features > * {
-    transform: skewY(7deg); }
+  background-position: center; }
+  @media only screen and (max-width: 75em) {
+    .section-features {
+      padding: 30rem 0; } }
   @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
