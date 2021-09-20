@@ -65,13 +65,11 @@
             баскетбольльных колец в Алматы</span
           >
         </h1>
-
-        <a href="#" class="btn btn--white btn--animated">Поддержать</a>
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Цели проекта</h2>
         </div>
@@ -119,7 +117,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="section-features">
         <div class="row">
           <div class="col-1-of-3">
             <div class="feature-box">
@@ -155,6 +153,12 @@
               </p>
             </div>
           </div>
+        </div>
+
+        <div class="row" style="text-align: center">
+          <a href="#section-stories" class="btn btn--white btn--animated"
+            >Связаться</a
+          >
         </div>
       </section>
 
@@ -211,7 +215,7 @@
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories" id="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="./img/video-basketball-court.mp4" />
@@ -331,16 +335,13 @@
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#" class="footer__link">О проекте</a>
+                <a href="#section-about" class="footer__link">О проекте</a>
               </li>
+              <!-- <li class="footer__item">
+                <a href="#section-stories" class="footer__link">Поддержать</a>
+              </li> -->
               <li class="footer__item">
-                <a href="#" class="footer__link">Поддержать</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Работы</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Кто мы</a>
+                <a href="#section-projects" class="footer__link">Проекты</a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Связаться</a>
