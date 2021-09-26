@@ -286,7 +286,7 @@ body {
   cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
     .navigation__button {
-      top: 4rem;
+      top: 1rem;
       right: 4rem; } }
 
 .navigation__background {
@@ -301,7 +301,7 @@ body {
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
-      top: 4.5rem;
+      top: 1.5rem;
       right: 4.5rem; } }
 
 .navigation__nav {
@@ -512,12 +512,12 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 60rem; }
   @media only screen and (max-width: 56.25em) {
     .card {
       margin-bottom: 8rem; } }
   .card__side {
-    height: 60rem;
+    height: 100%;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -528,7 +528,11 @@ body {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
-      background-color: white; }
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 2rem; }
     .card__side--back {
       background-color: white;
       transform: rotateY(180deg); }
@@ -544,6 +548,8 @@ body {
       background-image: url("../../img/projects/terenkur-1.jpg"); }
     .card__picture--2 {
       background-image: url("../../img/projects/terenkur-2.jpg"); }
+    .card__picture--3 {
+      background-image: url("../../img/projects/samal.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 400;
@@ -672,8 +678,9 @@ body {
       .popup__content {
         width: 90%; } }
   .popup__left {
-    width: 40%;
-    display: table-cell; }
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; }
     @media only screen and (max-width: 37.5em) {
       .popup__left {
         width: 40%;
@@ -685,7 +692,13 @@ body {
     padding: 3rem 5rem; }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    padding: 1rem;
+    height: 20rem;
+    object-fit: cover; }
+    @media only screen and (max-width: 37.5em) {
+      .popup__img {
+        height: 30vh; } }
   .popup__text {
     font-size: 1.5rem;
     margin-bottom: 4rem; }
@@ -707,8 +720,10 @@ body {
     line-height: 1; }
     @media only screen and (max-width: 37.5em) {
       .popup__close:link, .popup__close:visited {
+        color: white;
+        font-size: 5rem;
         top: 1.5rem;
-        right: 2rem; } }
+        right: 3rem; } }
   .popup__close:hover {
     color: black; }
 
@@ -744,6 +759,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-projects {
       padding: 20rem 0 10rem 0; } }
+  .section-projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    padding: 2rem; }
 
 .section-stories {
   position: relative;
