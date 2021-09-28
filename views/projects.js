@@ -69,6 +69,7 @@ class ProjectsUI {
         </div>
         <div class="popup__right">
           <a href="#section-projects" class="popup__close">&times;</a>
+          <div class="popup__close-background">&nbsp;</div>
           <h2 class="heading-secondary u-margin-bottom-small">
             ${project.title}
           </h2>
