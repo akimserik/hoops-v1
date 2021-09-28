@@ -25,7 +25,7 @@ const templateFooter = `
             <a href="#section-projects" class="footer__link">Проекты</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Связаться</a>
+            <a href="#section-stories" class="footer__link">Связаться</a>
           </li>
         </ul>
       </div>
